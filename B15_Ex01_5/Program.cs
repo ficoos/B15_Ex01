@@ -24,7 +24,6 @@ namespace NumberStatistics
 			{
 				Console.WriteLine("Please enter a positive {0} digit number:", k_RequiredNumberOfDigits);
 				string numberStr = Console.ReadLine();
-
 				isValid = numberStr.Length == k_RequiredNumberOfDigits;
 				if (isValid)
 				{
