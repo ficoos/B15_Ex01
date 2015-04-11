@@ -8,8 +8,8 @@ namespace BinaryChecker
 {
 	public class Program
 	{
-		private const int k_numberOfDigits = 3;
-		private const int k_numberOfEntries = 5;
+		private const int k_NumberOfDigits = 3;
+		private const int k_NumberOfEntries = 5;
 
 		public static void Main()
 		{
@@ -18,14 +18,14 @@ namespace BinaryChecker
 
 		private static void binaryCheck()
 		{
-			int[] numbers = new int[k_numberOfEntries];
+			int[] numbers = new int[k_NumberOfEntries];
 			int ascendingCount = 0;
 			int descendungCount = 0;
 			float binaryDigitCountAvarage = 0;
 			float decimalAvarage = 0;
 
-			Console.WriteLine("Please enter {0} numbers with {1} digits each:", k_numberOfEntries, k_numberOfDigits);
-			for (int i = 0; i < k_numberOfEntries; i++)
+			Console.WriteLine("Please enter {0} numbers with {1} digits each:", k_NumberOfEntries, k_NumberOfDigits);
+			for (int i = 0; i < k_NumberOfEntries; i++)
 			{
 				numbers[i] = readNumberFromUser();
 			}
@@ -48,8 +48,8 @@ namespace BinaryChecker
 					descendungCount++;
 				}
 
-				binaryDigitCountAvarage += (float)numberInBinary.Length / k_numberOfEntries;
-				decimalAvarage += (float)number / k_numberOfEntries;
+				binaryDigitCountAvarage += (float)numberInBinary.Length / k_NumberOfEntries;
+				decimalAvarage += (float)number / k_NumberOfEntries;
 			}
 
 			Console.WriteLine(".");
@@ -64,7 +64,7 @@ namespace BinaryChecker
 
 		private static bool tryParseInput(string i_inputNumberStr, out int o_result)
 		{
-			bool isValid = i_inputNumberStr.Length == k_numberOfDigits;
+			bool isValid = i_inputNumberStr.Length == k_NumberOfDigits;
 
 			if (isValid)
 			{

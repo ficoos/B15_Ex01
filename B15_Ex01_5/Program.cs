@@ -8,7 +8,7 @@ namespace NumberStatistics
 {
 	public class Program
 	{
-		private const int k_requiredNumberOfDigits = 8;
+		private const int k_RequiredNumberOfDigits = 8;
 
 		public static void Main()
 		{
@@ -22,9 +22,9 @@ namespace NumberStatistics
 
 			while (!isValid)
 			{
-				Console.WriteLine("Please enter a positive {0} digit number:", k_requiredNumberOfDigits);
+				Console.WriteLine("Please enter a positive {0} digit number:", k_RequiredNumberOfDigits);
 				string numberStr = Console.ReadLine();
-				isValid = numberStr.Length == k_requiredNumberOfDigits;
+				isValid = numberStr.Length == k_RequiredNumberOfDigits;
 
 				if (isValid)
 				{
